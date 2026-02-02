@@ -1,8 +1,10 @@
-# PokTube (squareBracket 1.0) ***INSECURE***
-
-You are free to use this code, but note that you should sanitize the code first before doing anything with it. We no longer are using this source code, and have instead writen a newer and better code.
+# PokTube
 
 ![Website](screenshot.png)
+
+This was the original FrameBit-based codebase used by squareBracket (now also known as FulpTube) back when it first launched in 2021. If you look deep enough within this repository's history, you may also find an earlier codebase from 2020, which was an earlier attempt.
+
+This codebase is riddled with SQL injection vulnerabilities inherited from FrameBit, and additionally has questionable licensing, so we suggest not using this at all. This code remains up for archival purposes.
 
 ## How to set PokTube up (might not be proper)
 
@@ -13,10 +15,8 @@ You are free to use this code, but note that you should sanitize the code first 
 5. Import ``poktube.sql`` to the ``poktube`` database
 6. Make a folder called ``preload`` in the content folder if it does not exist.
 
-### The homer
-Type these commands on your PokTube database on PHPmyAdmin, why? Because the database was updated. A fresh empty database is available.
+### Database schema updates
 
-No, this will not give access to that The Homer folder.
 #### April 23rd 2021 database changes
 Adds support for toggling between current player and old March 2021 player.
 ```sql
@@ -78,8 +78,5 @@ This adds Partner and HD Video Support. NEEDED OR ELSE UPLOADER WILL NOT WORK.
 ```sql
 ALTER TABLE `users` ADD `is_partner` TINYINT NOT NULL AFTER `registeredon`; 
 
-ALTER TABLE `videodb` ADD `HQVideoFile` TEXT NOT NULL AFTER `VideoFile`; 
+ALTER TABLE `videodb` ADD `HQVideoFile` TEXT NOT NULL AFTER `VideoFile`;
 ```
-## To do
-* Improve the All users page. (only some shitty internal incomplete admin control panel exists)
-* Add categories
