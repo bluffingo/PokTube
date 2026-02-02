@@ -2,7 +2,9 @@
 
 ![Website](screenshot.png)
 
-This was the original FrameBit-based codebase used by squareBracket (now also known as FulpTube) back when it first launched in 2021. If you look deep enough within this repository's history, you may also find an earlier codebase from 2020, which was an earlier attempt.
+This was the original FrameBit-based codebase used by squareBracket (now also known as FulpTube) back when it first launched in 2021. If you look deep enough within this repository's history, you will also find an earlier codebase from 2020.
+
+This codebase was used for the first three months of squareBracket's existence. It was scrapped in favor of a new codebase (now OpenSB) on April 24th 2021.
 
 This codebase is riddled with SQL injection vulnerabilities inherited from FrameBit, and additionally has questionable licensing, so we suggest not using this at all. This code remains up for archival purposes.
 
